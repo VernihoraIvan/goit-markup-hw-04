@@ -160,8 +160,17 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--title-color-navyblue);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   padding-top: 192px;
   padding-bottom: 192px;
+  height: 603px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 button {
@@ -208,6 +217,15 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.advantages-icon-container {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .advantages-list {
@@ -298,19 +316,6 @@ button {
   flex-direction: column;
 }
 
-.our-team-member {
-    padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  text-align: center;
-}
-
-.member-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
 .member-list .project-item-text {
   text-align: center;
   padding-left: 0px;
@@ -328,14 +333,60 @@ button {
   line-height: 1.2;
 }
 
-.our-team li {
-  width: 264px;
-  height: 380px;
+.member-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.our-team-item {
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+
+.our-team-member {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+.socials-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.socials-list-item {
+  display: flex;
+}
+.socials-link {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue-button-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.socials-item {
+  width: 16px;
+  height: 16px;
+  background-color: var(--blue-button-color);
+}
+
+.use-socials {
+  width: 40px;
+  height: 40px;
+}
+
+/* .socials {
+  width: 232px;
+height: 48px;
+} */
 
 /* =========================================FOOTER========================== */
 
@@ -426,9 +477,9 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-   box-sizing: border-box;
-  border: 0.5px solid #F4F4FD;
-   border-top: none;
+  box-sizing: border-box;
+  border: 0.5px solid #f4f4fd;
+  border-top: none;
 }
 
 .project-item-text p {
